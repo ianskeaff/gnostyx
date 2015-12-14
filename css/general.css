@@ -1,0 +1,692 @@
+html {
+	width: 100%;
+	margin:0;
+	padding:0;
+	
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	padding:0;
+	background-color: ;
+}
+
+
+header {
+	height: 50px;
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 100px;
+}
+
+
+
+
+
+/* Logo in Header */
+
+.logo {
+	height: 45px;
+	width: 120px;
+	margin: 5px 20px 0;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	opacity: .9;
+	position: fixed;
+	z-index: 10;
+}
+
+/*  Main logo on landing */
+
+.land-logo {
+	margin: 0 auto;
+	width: 180px;
+	height: 60px;
+	position: absolute;
+	top: 190px;
+	opacity: .8;
+	text-align: center;
+	left: 31%;
+}
+
+
+
+/*  Project Page logo & intro  */
+
+.proj-logo {
+	background-image:url(../images/logo.svg);
+	width: 140px;
+	height: 50px;
+	background-repeat: no-repeat; 
+}
+
+
+
+.proj-container {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.proj-title {
+	position: absolute;
+	text-align: left;
+	top: 140px;
+}
+
+#project-land h2 {
+	color: #ddd;
+}
+
+/*  */
+
+
+
+h1 {
+
+	font-family: Exo;
+
+}
+
+
+
+
+
+
+li {
+	font-family: Source Sans Pro;
+	color: #000;
+	list-style: none;
+}
+
+
+#section001 li a{
+	font-family: Source Sans Pro;
+	color: #000;
+	list-style: none;	
+	font-weight: 300;
+
+}
+
+#section001 li b{
+	font-family: Source Sans Pro;
+	color: #000;
+	list-style: none;	
+	font-weight: 400;
+	
+}
+
+#section001 li active {
+	color: red;
+}
+
+
+
+
+#landing {
+	/**/
+	/*	background-color: #25282d;*/
+	background-image: url(../images/imgback1.jpg);
+	height: 69vh;
+	width: 100vw;
+	margin: 0 auto;
+	padding:0;
+	top:50px;
+	text-align: center;
+
+
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+p {
+	font-family: Source Sans Pro;
+	color: #fff;
+	font-size: 12pt;
+	font-weight: 100;
+}
+
+#project-land {
+	background-image: url(../images/img001.jpg);
+	background-size: 100%;
+	height: 45vh;
+	width: 100vw;
+	margin: 0 auto;
+	padding:0;
+	top:50px;
+	text-align: center;
+
+
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#proj-sec1 {
+	width: 100%;
+	height: 100vh;
+	background-color: #fafafa;
+	
+}
+
+
+#landing h1 {
+	font-family: Exo;
+	font-size: 18pt;
+	color: #f8f8f8;
+	text-transform: uppercase;
+	font-weight: 100;
+	text-align: center;
+}
+
+
+#landing p {
+	font-family: Exo;
+	font-size: 13pt;
+	color: #999999;
+	text-transform: uppercase;
+	font-weight: 100;
+	text-align: center;
+}
+
+.introtype {
+	text-align: center;
+	margin: -270px auto;
+
+}
+
+.landing-content {
+	text-align: center;
+	
+	z-index: 10;
+	width: ;
+	margin: 15px auto;
+}
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*----------	SECTION 1		-----------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+#section1 {
+	
+	background-color: #fff;
+	width: 100%;
+	height: inherit;	
+	z-index: 10;
+	margin: 0 auto;
+}
+
+
+#section1 h1 {
+	font-family: Exo;
+	font-size: 14pt;
+	color: #666;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+}
+
+#section1 p {
+	font-family: Source Sans Pro;
+	font-size: 12pt;
+	color: #666;
+	
+	font-weight: 300;
+}
+
+
+
+.s1-content {
+	padding: 30px;
+}
+
+.s1-intro {
+	width: 95%;
+	height: inherit;
+	margin: 0 auto 100px;
+	text-align: justify;
+	line-height: 1.4em;
+}
+
+.s1-title {
+	width: 60%;
+	margin: 30px auto 60px;
+	text-align: center;
+	line-height: 1.3em;
+}
+
+
+
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*----------	SECTION 2		-----------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+
+#section2 {
+	width: 100%;
+	height: inherit;
+	background-color: #fafafa;
+	margin: 0 auto 0px;
+	text-align: center;
+}
+
+.s2-content {
+	width: 100%;
+	margin: 0px auto;
+	padding: 100px 0;
+}
+
+.s2-intro {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+
+.bucket {
+	padding: 5% 0;
+	margin: 30px;
+	
+}
+
+
+#section2 p {
+	font-weight: 200;
+	color: #666;
+	line-height: 1.4em;
+	font-family: Source Sans Pro;
+	font-size: 12pt;
+
+
+}
+
+
+#section2 p b {
+	font-weight: 300;
+	font-size: 14pt;
+	color:#999;
+}
+
+
+.b1-title {
+	text-align: center;
+	margin: 10px auto 10px;
+	text-transform: uppercase;
+
+}
+
+
+.s2-icon-1 {
+	background-image: url(../images/icon1.svg);
+	height: 70px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+.s2-icon-2 {
+	background-image: url(../images/icon2.svg);
+	height: 70px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+.s2-icon-3 {
+	background-image: url(../images/icon3.svg);
+	height: 70px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*----------	SECTION 3		-----------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+#section3 {
+	width: 100%;
+	height: inherit;
+	background-color: #1c1d1f;
+
+}
+
+
+.s3-content {
+	width: 100%;
+	margin: 0px auto;
+	padding: 100px 0;
+}
+
+
+
+
+.s3-icon-1 {
+	background-image: url(../images/s3-icon-01.svg);
+	background-repeat: no-repeat;
+	height: 55px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+.s3-icon-2 {
+	background-image: url(../images/s3-icon-02.svg);
+	background-repeat: no-repeat;
+	height: 55px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+.s3-icon-3 {
+	background-image: url(../images/s3-icon-03.svg);
+	background-repeat: no-repeat;
+	height: 55px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+.s3-icon-4 {
+	background-image: url(../images/s3-icon-04.svg);
+	background-repeat: no-repeat;
+	height: 55px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+.s3-icon-5 {
+	background-image: url(../images/s3-icon-05.svg);
+	background-repeat: no-repeat;
+	height: 55px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+.s3-icon-6 {
+	background-image: url(../images/s3-icon-06.svg);
+	background-repeat: no-repeat;
+	height: 55px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+#section3 p {
+	color: #ccc;
+	line-height: 1.3em;
+}
+
+
+#section3 p b {
+	color: #999;
+	font-weight: 300;
+	font-size: 14pt;
+}
+
+
+
+
+.s3-bucket {
+	padding: 5% 0;
+	margin: 30px 30px 0px;
+	
+}
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*----------	SECTION 4		-----------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+
+#section4 {
+	width: 100%;
+	height: 100vh;
+	background-color: #f3f3f3;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*----------	  FOOTER		-----------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+#footer-content {
+	width: 100%;
+	height: 350px;
+	background-color: #191919;
+}
+
+
+.copyright {
+	width: 100%;
+	height: 25px;
+	background-color: #121212;
+	padding-top: 5px;
+}
+
+
+
+footer {
+	width: 100%;
+	height: inherit;
+	text-align: center;
+	
+}
+
+
+
+footer p {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	color: #777;
+	font-size: 7pt;	
+	font-weight: 400;
+
+}
+
+
+
+/*---------------------------*/
+/*---------------------*/
+/*------------*/
+
+
+
+
+
+@media only screen and (max-width: 50em) {
+
+.ha-header {
+	display: none;
+	visibility: hidden;
+}
+
+}
+
+
+@media only screen and (min-width: 38em) and (max-width: 60em) {
+
+
+.s1-intro {
+	width: 60%;
+	height: inherit;
+	margin: 0 auto 100px;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+
+.logo {
+	height: 100px;
+	width: 110px;
+	margin: 10px 50px 0;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	opacity: .9;
+}
+
+
+.s2-intro {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+
+
+.land-logo {
+	margin: 0 auto;
+	width: 180px;
+	height: 60px;
+	position: absolute;
+	top: 190px;
+	opacity: .8;
+	text-align: center;
+	left: 31%;
+}
+
+
+
+.s2-content {
+	width: 70%;
+	margin: 0px auto;
+	padding: 100px 0;
+}
+
+
+
+.s3-content {
+	width: 70%;
+	margin: 0px auto;
+	padding: 100px 0;
+}
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 60em) {
+
+
+.s1-intro {
+	width: 60%;
+	height: inherit;
+	margin: 0 auto 100px;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+
+
+.s2-intro {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+
+.s2-content {
+	width: 70%;
+	margin: 0px auto;
+	padding: 100px 0;
+}
+
+
+
+.s3-content {
+	width: 70%;
+	margin: 0px auto;
+	padding: 100px 0;
+}
+
+
+
+.bucket {
+	padding: 5% 0;
+	margin: 50px 30px;
+	
+}
+
+
+.land-logo {
+	margin: 0 auto;
+	width: 180px;
+	height: 60px;
+	position: absolute;
+	top: 190px;
+	opacity: .8;
+	text-align: center;
+	left: 44.5%;
+}
+
+
+
+}
+
+
+
+
+
+
+

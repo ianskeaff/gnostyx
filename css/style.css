@@ -1,0 +1,372 @@
+.ha-header {
+	position: fixed;
+	top: 0;
+	opacity: 1;
+	right: 0;
+	width: 100%;
+	padding-top: ;
+	z-index: 1;
+	font-family: 'Lato', Arial, sans-serif;
+	-webkit-transform: translateY(-100px);
+	-moz-transform: translateY(-100px);
+	transform: translateY(-100px);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+
+}
+
+.ha-header-perspective {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	-webkit-perspective: 1100px;
+	-moz-perspective: 1100px;
+	perspective: 1100px;
+	-webkit-perspective-origin: 100%  50%;
+	-moz-perspective-origin: 100% 50%;
+	perspective-origin: 100% 50%;
+}
+
+.ha-header-perspective > div {
+	background: #212121;
+	text-align: left;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	text-align: justify;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	overflow: hidden;
+}
+
+.ha-header-front {
+	z-index: 2;
+	-webkit-transform-origin: 0% 100%;
+	-moz-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+}
+
+
+
+
+/* Individual states */
+
+
+
+.ha-header-small {
+	height: 50px;
+}
+
+.ha-header-hide {
+	height: 50px;
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.ha-header-show {
+	height: 50px;
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+.ha-header-show .ha-header-bottom {
+	opacity: 0;
+	-webkit-transition: top 0.5s, opacity 0s 0.5s;
+	-moz-transition: top 0.5s, opacity 0s 0.5s;
+	transition: top 0.5s, opacity 0s 0.5s;
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	top: 0;
+}
+
+.ha-header-subshow .ha-header-bottom {
+	-webkit-transition: top 0.5s;
+	-moz-transition: top 0.5s;
+	transition: top 0.5s;
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	top: 50%;
+}
+
+
+.ha-header-rotateBack .ha-header-bottom {
+	top: 50%;
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	vertical-align: top;
+}
+
+
+
+.ha-header-box nav {
+	opacity: 0;
+}
+
+.ha-header-fullscreen {
+	height: 100%;
+	opacity: 0.9;
+}
+
+.ha-header-fullscreen .ha-header-front {
+	height: 100%;
+}
+
+
+.ha-header-subfullscreen {
+	height: 100%;
+	opacity: 0.9;
+}
+
+.ha-header-subfullscreen .ha-header-bottom {
+	-webkit-transition: top 0.5s;
+	-moz-transition: top 0.5s;
+	transition: top 0.5s;
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	top: 50%;
+	background: #f3796c;
+}
+
+
+
+
+
+/*------*/
+/*------*/
+/*------*/
+/*------*/
+/*------*/
+/*------*/
+/*------*/
+
+
+DROPDOWN
+
+
+
+/*------*/
+/*------*/
+/*------*/
+/*------*/
+/*------*/
+/*------*/
+/*------*/
+
+
+
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/* By Creative Verse */
+
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html {
+	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table { /* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+a:hover,
+a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+	outline: 0;
+}
+
+]
+a img {
+	border: 0;
+}
+
+#clear {
+	clear:both;
+}
+
+.site-branding {
+	display:none;
+}
+
+/* DEMO PAGE STYLE */
+
+
+/* MENU STYLE */
+
+a { /* Gives Nice And Fast Transition Effect Typically For Flat Designs */
+-webkit-transition: all 0.3s ease-in; 
+-moz-transition: all 0.3s ease-in;
+-o-transition: all 0.3s ease-in; 
+}
+
+nav ul ul {
+	display:none;
+}
+
+nav ul li:hover > ul {
+	display:block;
+}
+
+nav {
+	margin:0;
+	border-bottom:1px solid #333;
+	background-color: #232323;
+	/*text-align: center;*/
+	text-align: right;
+	padding-right: 0px;
+	position: absolute;
+	top:0;
+	width: 100%;
+	display: inline-block;
+}
+
+nav a {
+	font-size:12px;
+	color:#CCC;
+	text-decoration:none;
+	font-family: 'Source Sans Pro';
+	padding: 10px 10px 16px 10px;
+	display:block;
+	background:#232323;
+	text-align: left;
+
+}
+
+nav a:hover {
+	color: #CCC;
+	background:#191919;
+	text-align: left;
+	
+}
+
+
+
+
+
+/*------------------*/
+/*------------------*/
+/*------------------*/
+/*------------------*/
+
+
+
+nav ul {
+	position:relative;
+	/*display:inline-table;*/
+	float: right;
+	width: 60%;
+	right: 0;
+}
+
+
+
+/*------------------*/
+/*------------------*/
+/*------------------*/
+/*------------------*/
+
+
+
+
+
+
+nav ul:after {
+		content: ""; clear: both; display: block;
+}
+
+nav ul li {
+	float:left;
+}
+
+nav ul ul {
+	position:absolute;
+	top:100%;
+}
+
+nav ul ul li {
+		float: none; 
+		position: relative;
+	}
+
+nav ul ul li a {
+		color: #CCC;
+		min-width:100px;
+	}
+		
+nav ul ul li a:hover {
+			background: #191919;
+			padding:16px 0px 16px 0px;
+	
+	}
+	
+nav ul ul ul {
+	position: absolute; left: 100%; top:0;
+	min-width:150px; border-bottom: #444;
+	padding: 0;
+}
+
+
