@@ -475,7 +475,7 @@ p {
 
 #section4 {
 	width: 100%;
-	height: 100vh;
+	height: inherit;
 	background-color: #f3f3f3;
 	margin: 0 auto;
 }
