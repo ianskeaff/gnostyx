@@ -18,7 +18,7 @@ header {
 	width: 100%;
 	margin: 0 auto;
 	position: fixed;
-	z-index: 100px;
+	z-index: 100;
 }
 
 
@@ -41,14 +41,17 @@ header {
 /*  Main logo on landing */
 
 .land-logo {
-	margin: 0 auto;
+	/*margin: 0 auto;*/
+	left: 50%;
+    margin-right: -50%;
 	width: 180px;
 	height: 60px;
 	position: absolute;
-	top: 190px;
+	top: 130px;
 	opacity: .8;
-	text-align: center;
-	left: 31%;
+	transform: translate(-50%, -50%);
+	/*text-align: center;
+	left: 31%;*/
 }
 
 
@@ -588,19 +591,6 @@ footer p {
 
 
 
-.land-logo {
-	margin: 0 auto;
-	width: 180px;
-	height: 60px;
-	position: absolute;
-	top: 190px;
-	opacity: .8;
-	text-align: center;
-	left: 31%;
-}
-
-
-
 .s2-content {
 	width: 70%;
 	margin: 0px auto;
@@ -666,18 +656,6 @@ footer p {
 	padding: 5% 0;
 	margin: 50px 30px;
 	
-}
-
-
-.land-logo {
-	margin: 0 auto;
-	width: 180px;
-	height: 60px;
-	position: absolute;
-	top: 190px;
-	opacity: .8;
-	text-align: center;
-	left: 44.5%;
 }
 
 
