@@ -317,8 +317,8 @@ nav a:hover {
 nav ul {
 	position:relative;
 	/*display:inline-table;*/
-	float: right;
-	width: 60%;
+	/*float: right;*/
+	/*width: 60%;*/
 	right: 0;
 }
 
