@@ -38,7 +38,7 @@ p {
 
 #section001 {
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 	margin: 0px auto;
 	}
 
@@ -348,7 +348,7 @@ li {
 
 #section001 {
 	width: 90%;
-	height: 100vh;
+	height: 80vh;
 	margin: 50px auto;
 /*	display: inline-block;*/
 }
@@ -473,9 +473,9 @@ li {
 
 #section001 {
 	width: 80%;
-	height: 100vh;
+	/*height: 80vh;*/
 	margin: 50px auto;
-/*	display: inline-block;*/
+	display: block;
 }
 
 
