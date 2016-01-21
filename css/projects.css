@@ -3,7 +3,7 @@
 h1 {
 	font-family: 'Source Sans Pro';
 	font-size: 14pt;
-	color:#666;
+	color:#333;
 	font-weight: 200;
 	line-height: 1.2em;
 	}
@@ -11,7 +11,7 @@ h1 {
 h2 {
 	font-family: 'Source Sans Pro';
 	font-size: 19pt;
-	color:#666;
+	color:#333;
 	font-weight: 200;
 	text-transform: uppercase;
 	}
@@ -19,7 +19,7 @@ h2 {
 h3 {
 	font-family: 'Source Sans Pro';
 	font-size: 35pt;
-	color:#666;
+	color:#333;
 	font-weight: 300;
 	text-transform: uppercase;
 	}
@@ -29,7 +29,7 @@ h3 {
 p {
 	font-family: 'Source Sans Pro';
 	font-size: 11pt;
-	color:#666;
+	color:#333;
 	font-weight: 300;
 	line-height: 1.3em;
 	}
@@ -38,7 +38,7 @@ p {
 
 #section001 {
 	width: 100%;
-	height: 80vh;
+	/*height: 110vh;*/
 	margin: 0px auto;
 	}
 
@@ -49,8 +49,8 @@ p {
 
 .s-left {
 	width: 100%;
-	height: 10vh;
-	padding: 0%;
+	height: 5vh;
+	padding: 0% 0% 0% 10%;
 	/*min-width: 230px;*/
 }
 
@@ -60,9 +60,9 @@ p {
 
 .s-right {
 	width: 100%;
-	height: 70vh;
+	height: 30vh;
 	float: left;
-	padding: 2%;
+	padding: 0% 0% 0% 10%;
 }
 
 .s-r-content {
@@ -84,6 +84,18 @@ p {
 	text-transform: uppercase;
 }
 
+.slick-slider {
+	margin: 25px;
+	/*height: 100vh;*/
+}
+
+.slick-list {
+	padding-bottom: 10px !important;
+}
+
+.slick-dots {
+	margin-bottom: 20px !important;
+}
 
 
 /*
@@ -123,7 +135,7 @@ p {
 
 .s-r-number {
 	float: right;
-	width: 15%;
+	/*width: 15%;*/
 	padding:1%;
 }
 
@@ -196,7 +208,7 @@ li {
 	z-index: 20;
 	display: block;
 	cursor: pointer;
-	color: #666;
+	color: #333;
 	font-size: 12px;
 	background-color: #fff;
 	text-transform: uppercase;
@@ -345,10 +357,9 @@ li {
 @media only screen and (min-width: 50em) and (max-width: 65em) {
 
 
-
 #section001 {
 	width: 90%;
-	height: 80vh;
+	/*height: 80vh;*/
 	margin: 50px auto;
 /*	display: inline-block;*/
 }
@@ -356,9 +367,10 @@ li {
 
 .s-left {
 	width: 30%;
-	height: 10vh;
+	height: 30vh;
 	/*background-color: #212121;*/
 	float: left;
+	padding: 3%;
 	/*min-width: 230px;*/
 	
 
@@ -367,17 +379,17 @@ li {
 
 .s-right {
 	width: 70%;
-	height: 70vh;
+	height: 30vh;
 	/*background-color: #191919;		*/
 	float: left;
-	/*padding: 5%;*/
+	padding: 3%;
 }
 
 .s-r-content {
 	width: 100%;
 	margin: ;
 	height: 100%;
-	padding-left: 40px;
+	/*padding-left: 40px;*/
 
 }
 
@@ -439,6 +451,18 @@ li {
 	}
 */
 
+.slick-slider {
+	margin: 25px;
+}
+
+.slick-list {
+	padding-bottom: 30px !important;
+}
+
+.slick-dots {
+	margin-bottom: 20px !important;
+}
+
 
 }
 
@@ -481,9 +505,9 @@ li {
 
 .s-left {
 	width: 30%;
-	height: 10vh;
+	height: 30vh;
 	float: left;
-	padding-right: 60px;
+	padding: 3%;
 	max-width: 300px;
 
 	
@@ -491,16 +515,16 @@ li {
 
 .s-right {
 	width: 70%;
-	height: 70vh;
+	height: 30vh;
 	float: left;
-	padding: 0% 3%;
+	padding: 3%;
 }
 
 .s-r-content {
 	width: 100%;
 	margin: ;
 	height: 100%;
-	padding-left: 25%;
+	/*padding-left: 25%;*/
 }
 
 
@@ -576,6 +600,13 @@ h3 {
 }
 
 
+.slick-list {
+	padding-bottom: 10px !important;
+}
+
+.slick-dots {
+	margin-bottom: 10px !important;
+}
 
 
 
