@@ -80,7 +80,7 @@ header {
 }
 
 #project-land h2 {
-	color: #ddd;
+	color: #999;
 }
 
 /*  */
@@ -92,9 +92,6 @@ h1 {
 	font-family: Exo;
 
 }
-
-
-
 
 
 
@@ -193,9 +190,9 @@ p {
 #landing p {
 	font-family: Exo;
 	font-size: 13pt;
-	color: #777;
+	color: #CCC;
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: 200;
 	text-align: center;
 }
 
@@ -258,14 +255,14 @@ p {
 .s1-intro {
 	width: 95%;
 	height: inherit;
-	margin: 0 auto 100px;
-	text-align: justify;
+	margin: 0 auto 60px;
+	/*text-align: center;*/
 	line-height: 1.4em;
 }
 
 .s1-title {
 	width: 60%;
-	margin: 30px auto 60px;
+	margin: 30px auto 40px;
 	text-align: center;
 	line-height: 1.3em;
 }
@@ -291,10 +288,18 @@ p {
 	text-align: center;
 }
 
+#section2 h1 {
+	font-family: Exo;
+	font-size: 14pt;
+	color: #333;
+	font-weight: 300;
+	text-align: center;
+}
+
 .s2-content {
 	width: 100%;
 	margin: 0px auto;
-	padding: 100px 0;
+	padding: 60px 0;
 }
 
 .s2-intro {
@@ -326,7 +331,7 @@ p {
 #section2 p b {
 	font-weight: 300;
 	font-size: 14pt;
-	color:#777;
+	color:#555;
 }
 
 
@@ -378,14 +383,28 @@ p {
 
 }
 
+#section3 h1 {
+	font-family: Exo;
+	font-size: 14pt;
+	color: #EEE;
+	font-weight: 300;
+	text-align: center;
+}
+
+
+.s3-title {
+	width: 60%;
+	margin: 30px auto 60px;
+	text-align: center;
+	line-height: 1.3em;
+}
+
 
 .s3-content {
 	width: 100%;
 	margin: 0px auto;
-	padding: 100px 0;
+	padding: 60px 0;
 }
-
-
 
 
 .s3-icon-1 {
@@ -443,13 +462,13 @@ p {
 
 
 #section3 p {
-	color: #ccc;
+	color: #eee;
 	line-height: 1.3em;
 }
 
 
 #section3 p b {
-	color: #777;
+	color: #CCC;
 	font-weight: 300;
 	font-size: 14pt;
 }
@@ -462,7 +481,6 @@ p {
 	margin: 30px 30px 0px;
 	
 }
-
 
 
 /*-----------------------------------------*/
@@ -544,7 +562,7 @@ p {
 }
 
 .contact a {
-	color:#CCC;
+	color:#444;
 }
 
 footer {
@@ -601,8 +619,8 @@ footer p {
 .s1-intro {
 	width: 60%;
 	height: inherit;
-	margin: 0 auto 100px;
-	text-align: center;
+	margin: 0 auto 60px;
+	/*text-align: center;*/
 	line-height: 1.4em;
 }
 
@@ -629,7 +647,7 @@ footer p {
 .s2-content {
 	width: 70%;
 	margin: 0px auto;
-	padding: 100px 0;
+	padding: 60px 0;
 }
 
 
@@ -637,7 +655,7 @@ footer p {
 .s3-content {
 	width: 70%;
 	margin: 0px auto;
-	padding: 100px 0;
+	padding: 60px 0;
 }
 
 
@@ -656,8 +674,8 @@ footer p {
 .s1-intro {
 	width: 60%;
 	height: inherit;
-	margin: 0 auto 100px;
-	text-align: center;
+	margin: 0 auto 60px;
+	/*text-align: center;*/
 	line-height: 1.4em;
 }
 
@@ -674,7 +692,7 @@ footer p {
 .s2-content {
 	width: 70%;
 	margin: 0px auto;
-	padding: 100px 0;
+	padding: 60px 0;
 }
 
 
@@ -682,7 +700,7 @@ footer p {
 .s3-content {
 	width: 70%;
 	margin: 0px auto;
-	padding: 100px 0;
+	padding: 60px 0;
 }
 
 
