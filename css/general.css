@@ -267,8 +267,12 @@ p {
 	line-height: 1.3em;
 }
 
-
-
+.s2-title {
+	width: 60%;
+	margin: 0px auto 0px;
+	text-align: center;
+	line-height: 1.3em;
+}
 
 
 
@@ -636,7 +640,6 @@ footer p {
 	line-height: 1.4em;
 }
 
-
 .logo {
 	/*height: 100px;*/
 	width: 110px;
@@ -646,7 +649,6 @@ footer p {
 	opacity: .9;*/
 }
 
-
 .s2-intro {
 	width: 60%;
 	margin: 0 auto;
@@ -654,15 +656,11 @@ footer p {
 
 }
 
-
-
 .s2-content {
 	width: 70%;
 	margin: 0px auto;
 	padding: 60px 0;
 }
-
-
 
 .s3-content {
 	width: 70%;
@@ -670,14 +668,7 @@ footer p {
 	padding: 60px 0;
 }
 
-
 }
-
-
-
-
-
-
 
 
 @media only screen and (min-width: 60em) {
@@ -691,8 +682,6 @@ footer p {
 	line-height: 1.4em;
 }
 
-
-
 .s2-intro {
 	width: 60%;
 	margin: 0 auto;
@@ -700,14 +689,11 @@ footer p {
 
 }
 
-
 .s2-content {
 	width: 70%;
 	margin: 0px auto;
 	padding: 60px 0;
 }
-
-
 
 .s3-content {
 	width: 70%;
