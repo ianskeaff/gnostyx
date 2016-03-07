@@ -34,7 +34,27 @@ p {
 	line-height: 1.3em;
 	}
 
+.listoverflow
+{
+	height: 50vh;
+}
+.ui-selectmenu-text {
+	text-transform: uppercase;
+}
 
+@media only screen and (max-width: 50em) {
+	.ui-selectmenu-button {
+		width: 80vw !important;
+		margin-left: auto;
+		margin-right: auto;
+		display: block !important;
+	}
+}
+
+.ui-state-default
+{
+	background: #ffffff !important;
+}
 
 #section001 {
 	width: 100%;
@@ -323,6 +343,23 @@ li {
 @media only screen and (min-width: 50em) and (max-width: 65em) {
 
 
+.listoverflow
+{
+	height: 50vh;
+}
+.ui-selectmenu-text {
+	text-transform: uppercase;
+}
+.ui-selectmenu-button {
+	width: 50vw !important;
+	margin-left: 30px;
+    /*display: block !important;*/
+}
+.ui-state-default
+{
+	background: #ffffff !important;
+}
+
 #section001 {
 	width: 90%;
 	/*height: 80vh;*/
@@ -445,6 +482,23 @@ li {
 
 
 @media only screen and (min-width: 60em) {
+
+
+.listoverflow
+{
+	height: 50vh;
+}
+.ui-selectmenu-text {
+	text-transform: uppercase;
+}
+.ui-selectmenu-button {
+	width: 30vw !important;
+    /*display: block !important;*/
+}
+.ui-state-default
+{
+	background: #ffffff !important;
+}
 
 
 #section001 {
