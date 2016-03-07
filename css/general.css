@@ -460,6 +460,18 @@ p {
 	margin: 0 auto;
 }
 
+.lab-icon {
+	background-image: url(../images/Lab.svg);
+}
+.framework-icon {
+	background-image: url(../images/Framework.svg);
+}
+.lab-icon, .framework-icon {
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 70px;
+	margin: 0 auto;
+}
 
 #section3 p {
 	color: #eee;

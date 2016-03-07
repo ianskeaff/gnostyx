@@ -14,9 +14,11 @@
 	<link href="css/grid.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-2.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/jquery.particleground.min.js"></script>
@@ -61,9 +63,30 @@
 				</div>	
 			</section>
 
-
-
 			<section id="section001">
+
+				<select id="projectlist">
+					<option id="0">System Information</option>
+					<option id="1">Information Discovery</option>
+					<option id="2">Web Renewal</option>
+					<option id="3">Regulatory Compliance</option>
+					<option id="4">Curriculum Management</option>
+					<option id="5">Software Design</option>
+					<option id="6">DITA Implementation</option>
+					<option id="7">Taxonomy Management</option>
+					<option id="8">Smart Procedures</option>
+					<option id="9">Case Management</option>
+					<option id="10">Engineering Standards</option>
+					<option id="11">Maintenance Aids</option>
+					<option id="12">Dynamic Publishing</option>
+					<option id="13">Innovation Processes</option>
+					<option id="14">Procurement Reform</option>
+					<option id="15">Information Aggregation</option>
+					<option id="16">Digital Humanities</option>
+					<option id="17">Content Conversion</option>
+					<option id="18">Content Strategy</option>
+					<option id="19">Information Prototyping</option>
+				</select>
 
 		<div class="carousel">
 		<!-- ======= -->
@@ -436,10 +459,31 @@ On many occasions over the last twenty years, Gnostyx has worked closely with so
 					
 					<div class="s-r-content">
 	                 <h1>Challenge</h1><p>
-Although it has been growing for over thirty years, there has been a lot of attention gathering recently around digital humanities, where computing technology is deployed to assist and advance traditional humanities scholarship practices. Initially confined to the academy, digital humanities projects have been recognized as being very close to the types of research activities that are essential in today’s interconnected world. What makes these projects interesting is the fact that they confront the complexities of text and media head-on and do so with some very challenging examples. These projects also must find ways to collect and manage collections of data resources that are notably large, rapidly-evolving, and at times unpredictable.  
+Although it has been growing for over thirty years, there has been a lot of
+attention gathering recently around digital humanities, where computing
+technology is deployed to assist and advance traditional humanities
+scholarship practices. Initially confined to the academy, digital humanities
+projects have been recognized as being very close to the types of research
+activities that are essential in today's interconnected world. What makes
+these projects interesting is the fact that they confront the complexities
+of text and media head-on and do so with some very challenging examples.
+These projects also must find ways to collect and manage collections of data
+resources that are notably large, rapidly-evolving, and at times
+unpredictable.  
 </p>
 						<h1>Solution</h1><p>
-Gnostyx worked on a major digital humanities project at the University of Oxford and did so as a charitable undertaking. The rationale for making this contribution has been that the project exhibits, rather graphically, the pitfalls of applying overly rigid technology tactics to the data resources that collect around complex text collections. The <a target="_blank" href="http://digitalmiscellaniesindex.org/">Digital Miscellanies Index</a> (DMI) provided insight to the publishing history and contents of poetry miscellanies from 18th century England. For the DMI, Gnostyx designed, developed, and deployed a solution for handling this data in a way that would permit it to evolve organically and to be accessed and reused by a global community of scholars.
+Gnostyx worked on a major digital humanities project at the University of
+Oxford and did so as a charitable undertaking. The rationale for making this
+contribution has been that the project exhibits, rather graphically, the
+pitfalls of applying overly rigid technology tactics to complex and changing
+data resources that collect around large text collections. The <a
+target="_blank" href="http://digitalmiscellaniesindex.org/"
+tabindex="0">Digital Miscellanies Index</a> (DMI) gives researchers the
+ability to access and explore data about the publishing history and
+composition of poetry miscellanies from 18th century England. Gnostyx
+designed, developed, and deployed the DMI platform so that this valuable
+data collection could be made freely available to, and usable by, a global
+community of humanities scholars.
 </p>
 						
 					
@@ -523,13 +567,26 @@ In support of a long series of projects, Gnostyx has evolved a response to this 
 				<section id="footer-content">
 					
 				</section>
-				<div class="copyright"><p>GNOSTYX RESEARCH INC. 2015 © ALL RIGHTS RESERVED</p></div>
+				<div class="copyright"><p>GNOSTYX RESEARCH INC. 2016 © ALL RIGHTS RESERVED</p></div>
 			</footer>
 
 
-	<!-- Slick carousel initialization code: -->
+	<!-- Slick carousel & drop down list initialization code: -->
 	<script type="text/javascript">
 		$(document).ready(function(){
+			$('.carousel').on('afterChange', function(event, slick, currentSlide){
+				//console.log('carousel changed to: ' + currentSlide + ' ' + $('#projectlist').val());
+				//get the index of the current slide and set the drop down list to that item, too
+				$('#projectlist').prop("selectedIndex",currentSlide).selectmenu("refresh");
+			});
+			$("#projectlist").selectmenu({
+				change: function( event, data ) {
+					//console.log('list changed to: '+data.item.index);
+					//get the index of the current drop down and set the carousel to that item, too
+					$('.carousel').slick('slickGoTo', data.item.index);
+				}
+			}).selectmenu( "menuWidget" ).addClass( "listoverflow" );
+
 		  $('.carousel').slick({
 	        dots: true,
 	        infinite: true,
@@ -568,7 +625,6 @@ In support of a long series of projects, Gnostyx has evolved a response to this 
 		</script>
 
 
-		<script type="text/javascript" src="js/footer-toggle-hybrid.js"></script>
 		<script type="text/javascript" src="js/retina.min.js"></script>
 	
 		<script type="text/javascript" src="js/animation.js"></script>
