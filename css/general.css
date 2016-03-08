@@ -101,6 +101,7 @@ li {
 #landing {
 	/**/
 	background-image: url(../images/imgback1.jpg);
+	background-color: black;
 	height: 300px;
 	width: 100vw;
 	margin: 0 auto;
