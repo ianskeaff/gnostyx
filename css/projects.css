@@ -4,7 +4,7 @@ h1 {
 	font-family: 'Source Sans Pro';
 	font-size: 14pt;
 	color:#333;
-	font-weight: 200;
+	font-weight: 400;
 	line-height: 1.2em;
 	}
 
@@ -41,6 +41,10 @@ p {
 .ui-selectmenu-text {
 	text-transform: uppercase;
 }
+.ui-state-focus
+{
+	border: 1px solid #F1836E !important;
+}
 
 @media only screen and (max-width: 50em) {
 	.ui-selectmenu-button {
@@ -54,6 +58,7 @@ p {
 .ui-state-default
 {
 	background: #ffffff !important;
+	border: 1px solid #F1836E !important;
 }
 
 #section001 {
@@ -118,34 +123,6 @@ p {
 }
 
 
-/*
-#landing {
-	width: 100%;
-	height: 35vh;
-	background-color: #252525; 
-	margin: 0 auto 0px;
-	padding: 150px 5% 0;
-	}
-
-
-#landing h2 {
-	font-size: 20pt;
-	font-family: 'Exo';
-	color:#fff;
-	font-weight: 100;
-	}
-
-
-.landing-title {
-
-}
-*/
-
-
-
-
-
-
 .s-r-title {
 	margin: ;
 	/*border: 1px solid #f2f2f2;*/
@@ -192,143 +169,6 @@ li {
 }
 
 
-
-/*---- Drop Down Start ----*/
-
-
-
-.ac-container-q{
-	/*width: 100vw;*/
-	margin: 0px auto 0;
-}
-
-.ac-container-q label{
-	text-align: left;
-	font-family: 'Muli', sans-serif;
-	font-weight: 300;
-	padding: 20px 20px;
-	position: relative;
-	z-index: 20;
-	display: block;
-	cursor: pointer;
-	color: #333;
-	font-size: 12px;
-	background-color: #fff;
-	text-transform: uppercase;
-	border-bottom: 1px solid #e3e3e3;
-}
-
-.ac-container-q label:hover{
-	background-color: #fff;
-	opacity: .6;
-	color: ;
-}
-.ac-container-q input:checked + label,
-.ac-container-q input:checked + label:hover{
-	/*background: #526fb2;*/
-	background-color: #fff;
-	color: #999;
-
-	
-	
-}
-.ac-container-q label:hover:after,
-.ac-container-q input:checked + label:hover:after{
-	content: '';
-	position: absolute;
-	/*width: 140px;
-	height: 40px;
-	right: 23px;
-	top: 12px;*/
-	
-}
-
-
-
-.expand {
-	
-	height: 20px;
-	width: 44px;
-	background-repeat: no-repeat;
-	float: right;
-	clear: left;
-
-}
-
-
-.ac-container-q input{
-	display: none;
-}
-
-.ac-container-q article{
-	margin: 0 5px;
-	background-color: #fafafa;
-	padding: 0px;
-	text-align: left;
-	overflow: hidden;
-	height: 0px;
-	position: relative;
-	min-width: 230px;
-	z-index: 10;
-	/*-webkit-box-shadow:inset 1px 1px 1px 1px #1c1c1c;
-	box-shadow:inset 1px 1px 1px 1px #1c1c1c;*/
-	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-	-moz-transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-	-o-transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-	-ms-transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-	transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-
-
-	border: 1px solid #e3e3e3;
-	border-top: none;
-	border-bottom: none;
-}
-
-
-
-.ac-container-q article p{
-	font-family: 'Muli', sans-serif;
-	font-style: sans-serif;
-	color: #fff;
-	line-height: 1.1em;
-	font-size: 12px;
-	/*padding: 0px 0 0 10px;*/
-	width: 100%;
-	text-align: justify;
-	/*margin: 10px auto 0 10px;*/
-
-}
-
-
-.ac-container-q input:checked ~ article{
-	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-	-moz-transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-	-o-transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-	-ms-transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-	transition: height 0.5s ease-in-out, box-shadow 0.5s linear;
-
-
-	border: 1px solid #e3e3e3;
-	border-top: none;
-	
-}
-.ac-container-q input:checked ~ article.ac-small{
-	height: 600px;
-}
-
-
-
-
-
-
-/*---- Drop End ----*/
-
-
-
-
-
-
-
 /*----------------------------------------*/
 /*----------------------------------------*/
 /*----------------------------------------*/
@@ -358,6 +198,7 @@ li {
 .ui-state-default
 {
 	background: #ffffff !important;
+	border: 1px solid #F1836E !important;
 }
 
 #section001 {
@@ -466,10 +307,6 @@ li {
 
 
 
-
-
-
-
 /*----------------------------------------*/
 /*----------------------------------------*/
 /*----------------------------------------*/
@@ -498,6 +335,7 @@ li {
 .ui-state-default
 {
 	background: #ffffff !important;
+	border: 1px solid #F1836E !important;
 }
 
 
@@ -559,25 +397,6 @@ h3 {
 	font-weight: 400;
 }
 
-
-/*
-#landing {
-	width: 100%;
-	height: 30vh;
-	background-image: url(../images/img001.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	margin: 0 auto 0px;
-	padding: 12%;
-}
-
-#landing h2 {
-	font-size: 25pt;
-	font-family: 'Exo';
-	color:#fff;
-	font-weight: 100;
-	}
-*/
 
 
 #section001 li {

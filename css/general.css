@@ -21,19 +21,11 @@ header {
 	z-index: 100;
 }
 
-
-
 /* Logo in Header */
 
 .logo {
 	height: 45px;
 	width: 110px;
-	/*margin: 5px 20px 0;
-	background-image: url(../images/logo.svg);
-	background-repeat: no-repeat;
-	opacity: .9;
-	position: fixed;
-	z-index: 10;*/
 }
 
 /*  Main logo on landing */
@@ -41,19 +33,10 @@ header {
 .land-logo {
 	margin-top: 60px;
 	margin-bottom: 10px;
-	/*left: 50%;
-    margin-right: -50%;*/
 	width: 180px;
 	height: 60px;
-	/*position: absolute;
-	top: 130px;*/
 	opacity: .8;
-	/*transform: translate(-50%, -50%);*/
-	/*text-align: center;
-	left: 31%;*/
 }
-
-
 
 /*  Project Page logo & intro  */
 
@@ -63,8 +46,6 @@ header {
 	height: 50px;
 	background-repeat: no-repeat; 
 }
-
-
 
 .proj-container {
 	width: 80%;
@@ -85,22 +66,17 @@ header {
 
 /*  */
 
-
-
 h1 {
 
 	font-family: Exo;
 
 }
 
-
-
 li {
 	font-family: Source Sans Pro;
 	color: #000;
 	list-style: none;
 }
-
 
 #section001 li a{
 	font-family: Source Sans Pro;
@@ -122,20 +98,16 @@ li {
 	color: red;
 }
 
-
-
-
 #landing {
 	/**/
-	/*	background-color: #25282d;*/
 	background-image: url(../images/imgback1.jpg);
+	background-color: black;
 	height: 300px;
 	width: 100vw;
 	margin: 0 auto;
 	padding:0;
 	top:50px;
 	text-align: center;
-
 
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -152,7 +124,6 @@ p {
 }
 
 #project-land {
-	/*background-image: url(../images/img001.jpg);*/
 	background-size: 100%;
 	height: 150px;
 	width: 100vw;
@@ -249,7 +220,7 @@ p {
 
 
 .s1-content {
-	padding: 30px;
+	padding: 30px 30px 0px;
 }
 
 .s1-intro {
@@ -267,8 +238,12 @@ p {
 	line-height: 1.3em;
 }
 
-
-
+.s2-title {
+	width: 60%;
+	margin: 0px auto 0px;
+	text-align: center;
+	line-height: 1.3em;
+}
 
 
 
@@ -367,8 +342,6 @@ p {
 }
 
 
-
-
 /*-----------------------------------------*/
 /*-----------------------------------------*/
 /*----------	SECTION 3		-----------*/
@@ -394,7 +367,7 @@ p {
 
 .s3-title {
 	width: 60%;
-	margin: 30px auto 60px;
+	margin: 0px auto 0px;
 	text-align: center;
 	line-height: 1.3em;
 }
@@ -486,8 +459,6 @@ p {
 }
 
 
-
-
 .s3-bucket {
 	padding: 5% 0;
 	margin: 30px 30px 0px;
@@ -502,30 +473,12 @@ p {
 /*-----------------------------------------*/
 
 
-
 #section4 {
 	width: 100%;
 	height: inherit;
 	background-color: #f3f3f3;
 	margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*-----------------------------------------*/
@@ -593,13 +546,9 @@ footer p {
 }
 
 
-
 /*---------------------------*/
 /*---------------------*/
 /*------------*/
-
-
-
 
 
 @media only screen and (max-width: 50em) {
@@ -612,15 +561,6 @@ footer p {
 .s-left {
 	height: 10vh;
 }
-/*.ha-header {
-	display: none;
-	visibility: hidden;
-}*/
-/*.logo {
-	display: none;
-	visibility: hidden;
-}*/
-
 
 }
 
@@ -636,7 +576,6 @@ footer p {
 	line-height: 1.4em;
 }
 
-
 .logo {
 	/*height: 100px;*/
 	width: 110px;
@@ -646,7 +585,6 @@ footer p {
 	opacity: .9;*/
 }
 
-
 .s2-intro {
 	width: 60%;
 	margin: 0 auto;
@@ -654,15 +592,11 @@ footer p {
 
 }
 
-
-
 .s2-content {
 	width: 70%;
 	margin: 0px auto;
-	padding: 60px 0;
+	padding: 60px 0 10px;
 }
-
-
 
 .s3-content {
 	width: 70%;
@@ -670,14 +604,7 @@ footer p {
 	padding: 60px 0;
 }
 
-
 }
-
-
-
-
-
-
 
 
 @media only screen and (min-width: 60em) {
@@ -691,8 +618,6 @@ footer p {
 	line-height: 1.4em;
 }
 
-
-
 .s2-intro {
 	width: 60%;
 	margin: 0 auto;
@@ -700,14 +625,11 @@ footer p {
 
 }
 
-
 .s2-content {
 	width: 70%;
 	margin: 0px auto;
 	padding: 60px 0;
 }
-
-
 
 .s3-content {
 	width: 70%;
@@ -715,21 +637,11 @@ footer p {
 	padding: 60px 0;
 }
 
-
-
 .bucket {
 	padding: 5% 0;
 	margin: 50px 30px;
 	
 }
 
-
-
 }
-
-
-
-
-
-
 
