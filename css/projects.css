@@ -48,7 +48,7 @@ p {
 
 .proj-title {
 	text-align: left;
-	margin-top: 60px;
+	margin-top: 30px;
 	margin-bottom: 15px;
 }
 
@@ -219,7 +219,7 @@ li {
 #section001 {
 	width: 90%;
 	/*height: 80vh;*/
-	margin: 50px auto;
+	margin: 40px auto;
 /*	display: inline-block;*/
 }
 
@@ -371,7 +371,7 @@ li {
 #section001 {
 	width: 70%;
 	/*height: 80vh;*/
-	margin: 50px auto;
+	margin: 40px auto;
 	display: block;
 }
 
