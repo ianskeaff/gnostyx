@@ -46,6 +46,12 @@ p {
 	border: 1px solid #F1836E !important;
 }
 
+.proj-title {
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
 @media only screen and (max-width: 50em) {
 	.ui-selectmenu-button {
 		width: 80vw !important;
@@ -53,12 +59,21 @@ p {
 		margin-right: auto;
 		display: block !important;
 	}
+.projects-icon {
+	background-image: url(../images/projects.svg);
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	vertical-align: text-bottom;
+}
+
 }
 
 .ui-state-default
 {
 	background: #ffffff !important;
 	border: 1px solid #F1836E !important;
+	margin-top: 10px;
 }
 
 #section001 {
@@ -204,10 +219,17 @@ li {
 #section001 {
 	width: 90%;
 	/*height: 80vh;*/
-	margin: 50px auto;
+	margin: 40px auto;
 /*	display: inline-block;*/
 }
 
+.projects-icon {
+	background-image: url(../images/projects.svg);
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	vertical-align: text-bottom;
+}
 
 .s-left {
 	width: 30%;
@@ -338,11 +360,18 @@ li {
 	border: 1px solid #F1836E !important;
 }
 
+.projects-icon {
+	background-image: url(../images/projects.svg);
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	vertical-align: text-bottom;
+}
 
 #section001 {
-	width: 80%;
+	width: 70%;
 	/*height: 80vh;*/
-	margin: 50px auto;
+	margin: 40px auto;
 	display: block;
 }
 
