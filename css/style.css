@@ -1,3 +1,24 @@
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 50em) {
+	/* #menu is the original menu */
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+		/*background: transparent;*/
+	}
+
+	.slicknav_nav {
+		clear: none !important;
+		background-color: #4c4c4c;
+	}
+}
+
 .ha-header {
 	position: fixed;
 	top: 0;
