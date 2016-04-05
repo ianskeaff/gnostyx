@@ -12,11 +12,13 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/projects.css">
 	<link href="css/grid.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slicknav.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<!--<script type="text/javascript" src="js/jquery.particleground.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script>
 </head>
@@ -28,11 +30,11 @@
 				<header id="ha-header" class="ha-header">
 					<div class="ha-header-perspective">
 						<nav>
-							<ul>
+							<ul id="menu">
 								<li><img src="images/logo.svg" class="logo"></li>
 								<li><a href="index.html">Home</a></li>
 
-								<li><a href="#section4">Products</a>
+								<li><a href="index.html#section4">Products</a>
 									<!-- <ul>
 										<li><a href="#">Gnostyx Lab</a></li>
 										<li><a href="#">Gnostyx Framework</a></li>
@@ -247,6 +249,12 @@
 		</script>
 
 		<script>
+			$(function(){
+				$('#menu').slicknav({label: '', prependTo: '#ha-header'});
+			});
+		</script>
+
+		<script>
 			$( function() {
 				$( '#cbp-qtrotator' ).cbpQTRotator();
 
@@ -257,7 +265,6 @@
 			<script type="text/javascript" src="js/retina.min.js"></script>
 		
 			<script type="text/javascript" src="js/animation.js"></script>
-			<script type="text/javascript" src="js/waypoints.min.js"></script>
 
 </body>
 </html>
