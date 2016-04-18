@@ -60,7 +60,7 @@ p {
 		display: block !important;
 	}
 .projects-icon {
-	background-image: url(../images/projects.svg);
+	background-image: url(../images/project-icon.svg);
 	display: inline-block;
 	height: 30px;
 	width: 30px;
@@ -224,7 +224,7 @@ li {
 }
 
 .projects-icon {
-	background-image: url(../images/projects.svg);
+	background-image: url(../images/project-icon.svg);
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -361,7 +361,7 @@ li {
 }
 
 .projects-icon {
-	background-image: url(../images/projects.svg);
+	background-image: url(../images/project-icon.svg);
 	display: inline-block;
 	height: 50px;
 	width: 50px;

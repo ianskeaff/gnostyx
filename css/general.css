@@ -26,6 +26,9 @@ header {
 .logo {
 	height: 45px;
 	width: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 /*  Main logo on landing */
@@ -35,7 +38,7 @@ header {
 	margin-bottom: 10px;
 	width: 180px;
 	height: 60px;
-	opacity: .8;
+	opacity: 1;
 }
 
 /*  Project Page logo & intro  */
@@ -144,9 +147,9 @@ p {
 #landing h1 {
 	font-family: Exo;
 	font-size: 18pt;
-	color: #f8f8f8;
+	color: #FFF;
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: 200;
 	text-align: center;
 }
 
@@ -154,7 +157,7 @@ p {
 #landing p {
 	font-family: Exo;
 	font-size: 13pt;
-	color: #CCC;
+	color: #FFF;
 	text-transform: uppercase;
 	font-weight: 200;
 	text-align: center;
@@ -329,7 +332,7 @@ p {
 
 .s2-icon-3 {
 	background-image: url(../images/icon3.svg);
-	height: 70px;
+	height: 65px;
 	width: 70px;
 	margin: 0 auto;
 }
@@ -458,6 +461,19 @@ p {
 	
 }
 
+#services p
+{
+	font-size: 11pt;
+	margin-bottom: 15px;
+}
+.serviceslist li
+{
+	text-transform: none;
+	font-size: 11pt;
+	list-style: disc;
+	margin-left: 20px;
+	font-family: 'Source Sans Pro';
+}
 
 /*-----------------------------------------*/
 /*-----------------------------------------*/
@@ -570,7 +586,9 @@ footer p {
 }
 
 .logo {
-	/*height: 100px;*/
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 	width: 110px;
 	/*margin: 10px 50px 0;
 	background-image: url(../images/logo.svg);

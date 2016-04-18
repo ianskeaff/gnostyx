@@ -12,13 +12,13 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/projects.css">
 	<link href="css/grid.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/slicknav.min.css">
+	<link rel="stylesheet" type="text/css" href="css/navstyles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<!--<script type="text/javascript" src="js/jquery.particleground.min.js"></script>-->
-	<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript" src="js/responsive-nav.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script>
 </head>
@@ -27,28 +27,20 @@
 
 	<body>
 
-				<header id="ha-header" class="ha-header">
-					<div class="ha-header-perspective">
-						<nav>
-							<ul id="menu">
-								<li><img src="images/logo.svg" class="logo"></li>
-								<li><a href="index.html">Home</a></li>
-
-								<li><a href="index.html#section4">Products</a>
-									<!-- <ul>
-										<li><a href="#">Gnostyx Lab</a></li>
-										<li><a href="#">Gnostyx Framework</a></li>
-									</ul> -->
-								</li>
-									  
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</nav>
-						
-					</div>
-				</header>
-
+			<header id="ha-header" class="ha-header">
+				<div class="ha-header-perspective">
+					<nav id="navmenu">
+						<ul id="menu">
+							<li><img src="images/logo.svg" class="logo"></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#services">Services</a></li>
+							<li><a href="index.html#section4">Products</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
 
 			<section class="ha-waypoint" data-animate-down="ha-header-show" data-animate-up="ha-header-hide">
 			</section>
@@ -189,6 +181,33 @@
 					</section>
 
 
+					<section id="services">
+
+					<div class="s3-content">
+						<div class="s1-title">
+							<h2>Services</h2>
+						</div>
+						<div class="s1-intro">
+							<p>Based on decades of experience, Gnostyx offers a wide range of services to organizations seeking to make the most of their content. These services include:</p>
+							<ul class="serviceslist">
+								<li>Content strategy formulation</li>
+								<li>Content initiative justification</li>
+								<li>Content initiative planning &amp; management</li>
+								<li>Content analysis &amp; measurement</li>
+								<li>Content process review &amp; redesign</li>
+								<li>Content architecture design</li>
+								<li>Content solution design, development, deployment &amp; support</li>
+								<li>Content technology selection, evaluation, verification, and integration</li>
+								<li>Content migration planning, coordination, and quality control</li>
+								<li>Learning &amp; learning content management solution deployment</li>
+								<li>Dynamic content delivery solution implementation</li>
+							</ul>
+
+						</div>
+					</div>
+					</section>
+
+
 					<section id="section4">
 
 					<div class="s3-content">
@@ -249,9 +268,7 @@
 		</script>
 
 		<script>
-			$(function(){
-				$('#menu').slicknav({label: '', prependTo: '#ha-header', closeOnClick: true});
-			});
+			var navigation = responsiveNav("#navmenu", {closeOnNavClick: true});
 		</script>
 
 		<script>

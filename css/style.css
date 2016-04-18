@@ -4,18 +4,28 @@
 
 @media screen and (max-width: 50em) {
 	/* #menu is the original menu */
-	.js #menu {
+	/*.js #menu {
 		display:none;
-	}
+	}*/
 	
 	.js .slicknav_menu {
 		display:block;
-		/*background: transparent;*/
+		background: transparent;
+		/*clear: none !important;*/
+		/*padding: 0px;*/
+	}
+
+	.slicknav_menu:after {
+		/*clear: none !important;*/
 	}
 
 	.slicknav_nav {
 		clear: none !important;
 		background-color: #4c4c4c;
+	}
+
+	.open-menu {
+		background-color: #4c4c4c !important;
 	}
 }
 
@@ -174,14 +184,7 @@
 /*------*/
 /*------*/
 /*------*/
-/*------*/
-
-
-DROPDOWN
-
-
-
-/*------*/
+/*---DROPDOWN---*/
 /*------*/
 /*------*/
 /*------*/
@@ -294,6 +297,8 @@ nav ul li:hover > ul {
 
 nav {
 	margin:0;
+    margin-left: auto;
+    margin-right: auto;
 	border-bottom:1px solid #333;
 	background-color: #232323;
 	/*text-align: center;*/
@@ -307,21 +312,19 @@ nav {
 
 nav a {
 	font-size:12px;
-	color:#CCC;
+	color:#EEE;
 	text-decoration:none;
 	font-family: 'Source Sans Pro';
 	padding: 10px 10px 16px 10px;
 	display:block;
 	background:#232323;
-	text-align: left;
-
+	text-align: center;
 }
 
 nav a:hover {
 	color: #CCC;
 	background:#191919;
-	text-align: left;
-	
+	/*text-align: left;*/
 }
 
 
@@ -336,23 +339,19 @@ nav a:hover {
 
 
 nav ul {
-	position:relative;
-	/*display:inline-table;*/
+	position: relative;
+	display: flex;
+	justify-content: space-around;
 	/*float: right;*/
 	/*width: 60%;*/
 	right: 0;
 }
 
 
-
 /*------------------*/
 /*------------------*/
 /*------------------*/
 /*------------------*/
-
-
-
-
 
 
 nav ul:after {
@@ -361,6 +360,9 @@ nav ul:after {
 
 nav ul li {
 	float:left;
+	padding: 0;
+	font-weight: 400;
+	color: #EEE;
 }
 
 nav ul ul {
