@@ -148,10 +148,10 @@ a:hover {
     height: 55px;
     float: right;
     display: block;
-    margin: 0 -2em 0 0;
+    margin: -1em -2em 0 0;
   }
   .nav-toggle:before {
-    color: #555; /* Edit this to change the icon color */
+    color: #f15f43; /* Edit this to change the icon color */
     font-family: "responsivenav";
     font-style: normal;
     font-weight: normal;

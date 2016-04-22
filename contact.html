@@ -62,7 +62,7 @@
 						<p><a href="https://twitter.com/gnostyx" class="twitter-follow-button" data-show-count="false">Follow @gnostyx</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
 						<br/>
-						<p><a href="mailto:info@gnostyx.com"><img src="images/email.png" style="height: 20px"></a></p>
+						<p><a id="imgSendEmail" href="#"><img src="images/email.png" style="height: 20px; width: 117px;border-radius: 3px;"></a></p>
 						<br/>
 						<p>Gnostyx Research Inc.</p>
 						<p>1 Rideau Street</p>
@@ -75,15 +75,19 @@
 				</div>
 			</section>
 
-					<footer>
-						<section id="footer-content">
+	<footer>
+		<section id="footer-content">
 
-						</section>
-						<div class="copyright"><p>GNOSTYX RESEARCH INC. 2016 © ALL RIGHTS RESERVED</p></div>
-					</footer>
+		</section>
+		<div class="copyright"><p>GNOSTYX RESEARCH INC. 2016 © ALL RIGHTS RESERVED</p></div>
+	</footer>
 
-
-
+	<script type="text/javascript">
+		$('#imgSendEmail').click(function (event) {
+		  var mailtoLink = 'mailto:' +  'info' + '@' + 'gnostyx' + '.com?subject=Gnostyx Inquiry';
+		  this.href = mailtoLink;
+		});
+	</script>
 	<script src="js/waypoints2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.cbpQTRotator.min.js"></script>
 	<script>
@@ -105,7 +109,7 @@
 		</script>
 
 		<script>
-			var navigation = responsiveNav("#navmenu", {closeOnNavClick: true});
+			var navigation = responsiveNav("#navmenu", {closeOnNavClick: true, insert: "after"});
 		</script>
 
 		<script>
