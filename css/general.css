@@ -473,6 +473,12 @@ p {
 	font-size: 11pt;
 	margin-bottom: 15px;
 }
+.serviceslist
+{
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
 .serviceslist li
 {
 	text-transform: none;
@@ -597,6 +603,13 @@ footer p {
 	height: inherit;
 	margin: 0 auto 15px;
 	line-height: 1.4em;
+}
+
+.serviceslist
+{
+  columns: 1;
+  -webkit-columns: 1;
+  -moz-columns: 1;
 }
 
 .logo {
