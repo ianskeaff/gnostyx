@@ -36,7 +36,7 @@
 							<li><a href="index.html#services">Services</a></li>
 							<li><a href="index.html#section4">Products</a></li>
 							<li><a href="projects.html">Projects</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -188,7 +188,7 @@
 							<h2>Services</h2>
 						</div>
 						<div class="services-intro">
-							<p>Gnostyx helps organizations to get the most out of their content by applying best-of-breed content standards, techniques and technologies. Improvement opportunities are typically sought in how organizations create and deliver documentation, define and govern their processes, assemble and leverage data sources, and publish and exchange information for customers and partners. Common deliverables prepared under Gnostyx services include:</p>
+							<p>Gnostyx helps organizations get the most out of their content by applying best-of-breed content standards, techniques and technologies. Improvement opportunities are typically sought in how organizations create and deliver documentation, define and govern their processes, assemble and leverage data sources, and publish and exchange information for customers and partners. Common deliverables prepared under Gnostyx services include:</p>
 							<ul class="serviceslist">
 								<li>Content strategies</li>
 								<li>Business cases</li>
@@ -206,7 +206,7 @@
 								<li>Integrated content solutions</li>
 							</ul>
 						</div>
-						<div class="s1-intro">
+						<div class="services-intro">
 							<p>As a general practice, Gnostyx has found it to be highly beneficial to its customers to align their solution investments with key trends in the content management and publishing industry. Specifically, the Darwin Information Typing Architecture (DITA) open standard offers some important benefits including access to an active global community of practitioners, an expanding array of commercial and open source technology options, and a growing body of best practices focused on delivering effective multi-channel information experiences.</p>
 							<p>Under the umbrella of Lean DITA, Gnostyx offers a range of services that focus on specializing DITA content models, developing plug-ins for the DITA Open Toolkit (DITA OT), and implementing DITA-based solutions to cost-effectively meet organizational improvement goals.</p>
 						</div>
@@ -238,20 +238,28 @@
 					</div>
 					</section>
 
-
-
-
-
-					<footer>
-						<section id="footer-content">
-
-						</section>
-						<div class="copyright"><p>GNOSTYX RESEARCH INC. 2016 © ALL RIGHTS RESERVED</p></div>
-					</footer>
-
-
-
-
+	<footer>
+		<section id="footer-content"></section>
+		<section id="contact">
+			<div class="contact">
+				<p>Get in touch with us!</p>
+				<br/>
+				<p><a href="https://twitter.com/gnostyx" class="twitter-follow-button" data-show-count="false">Follow @gnostyx</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+				<br/>
+				<p><a id="imgSendEmail" href="#"><img src="images/email.png" style="height: 20px; width: 117px;border-radius: 3px;"></a></p>
+				<br/>
+				<p>Gnostyx Research Inc.</p>
+				<p>1 Rideau Street</p>
+				<p>Suite 700</p>
+				<p>Ottawa, Ontario KIN 8S7</p>
+				<p>Canada</p>
+				<br/>
+				<p>+1-613-670-5786</p>
+			</div>
+		</section>
+		<div class="copyright"><p>GNOSTYX RESEARCH INC. 2016 © ALL RIGHTS RESERVED</p></div>
+	</footer>
 
 	<script src="js/waypoints2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.cbpQTRotator.min.js"></script>
@@ -283,11 +291,16 @@
 
 			} );
 		</script>
+		<script type="text/javascript">
+			$('#imgSendEmail').click(function (event) {
+			  var mailtoLink = 'mailto:' +  'info' + '@' + 'gnostyx' + '.com?subject=Gnostyx Inquiry';
+			  this.href = mailtoLink;
+			});
+		</script>
 
-
-			<script type="text/javascript" src="js/retina.min.js"></script>
-		
-			<script type="text/javascript" src="js/animation.js"></script>
+		<script type="text/javascript" src="js/retina.min.js"></script>
+	
+		<script type="text/javascript" src="js/animation.js"></script>
 
 </body>
 </html>

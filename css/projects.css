@@ -94,6 +94,13 @@ p {
 	/*min-width: 230px;*/
 }
 
+#contact .s-left {
+	width: 100%;
+	height: 5vh;
+	padding: 0% 0% 0% 0%;
+	/*min-width: 230px;*/
+}
+
 .s-left:hover {
 
 }
@@ -103,6 +110,13 @@ p {
 	height: 30vh;
 	float: left;
 	padding: 0% 0% 0% 10%;
+}
+
+#contact .s-right {
+	width: 100%;
+	height: 30vh;
+	float: left;
+	padding: 0% 0% 0% 0%;
 }
 
 .s-r-content {
@@ -382,8 +396,6 @@ li {
 	float: left;
 	padding: 3%;
 	max-width: 300px;
-
-	
 }
 
 .s-right {

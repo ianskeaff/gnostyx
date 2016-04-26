@@ -42,7 +42,7 @@
 							<li><a href="index.html#services">Services</a></li>
 							<li><a href="index.html#section4">Products</a></li>
 							<li><a href="projects.html">Projects</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -569,13 +569,28 @@ In support of a long series of projects, Gnostyx has evolved a response to this 
 
 		</section>
 
-			<footer>
-				<section id="footer-content">
-					
-				</section>
-				<div class="copyright"><p>GNOSTYX RESEARCH INC. 2016 © ALL RIGHTS RESERVED</p></div>
-			</footer>
-
+	<footer>
+		<section id="footer-content"></section>
+		<section id="contact">
+			<div class="contact">
+				<p>Get in touch with us!</p>
+				<br/>
+				<p><a href="https://twitter.com/gnostyx" class="twitter-follow-button" data-show-count="false">Follow @gnostyx</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+				<br/>
+				<p><a id="imgSendEmail" href="#"><img src="images/email.png" style="height: 20px; width: 117px;border-radius: 3px;"></a></p>
+				<br/>
+				<p>Gnostyx Research Inc.</p>
+				<p>1 Rideau Street</p>
+				<p>Suite 700</p>
+				<p>Ottawa, Ontario KIN 8S7</p>
+				<p>Canada</p>
+				<br/>
+				<p>+1-613-670-5786</p>
+			</div>
+		</section>
+		<div class="copyright"><p>GNOSTYX RESEARCH INC. 2016 © ALL RIGHTS RESERVED</p></div>
+	</footer>
 
 	<!-- Slick carousel & drop down list initialization code: -->
 	<script type="text/javascript">
@@ -632,6 +647,12 @@ In support of a long series of projects, Gnostyx has evolved a response to this 
 				$( '#cbp-qtrotator' ).cbpQTRotator();
 
 			} );
+		</script>
+		<script type="text/javascript">
+			$('#imgSendEmail').click(function (event) {
+			  var mailtoLink = 'mailto:' +  'info' + '@' + 'gnostyx' + '.com?subject=Gnostyx Inquiry';
+			  this.href = mailtoLink;
+			});
 		</script>
 
 
