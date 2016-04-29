@@ -534,24 +534,38 @@ p {
 
 #contact {
 	height: 40vh;
-	background-color: #F3F3F3;
+	background-color: #191919;
 }
 
 .contact {
 	width: 100%;
-	background-color: #F3F3F3;
+	background-color: #191919;
 	padding-top: 5px;
 }
 
 .contact p {
 	font-family: Source Sans Pro;
 	font-size: 12pt;
-	color: #333;
+	color: #888;
 	font-weight: 300;
 }
 
 .contact a {
 	color:#444;
+}
+
+#imgSendEmail {
+	background-color: #f15f43;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+	font-weight: 500;
+	height: 20px;
+	width: 117px;
+	border-radius: 3px;
 }
 
 footer {
