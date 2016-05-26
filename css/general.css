@@ -104,13 +104,25 @@ li {
 	padding:0;
 	top:50px;
 	text-align: center;
-
 	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
+#landing-404 {
+	background-image: url(../images/404-changing.jpg);
+	background-position: center; 
+	background-color: black;
+	background-repeat: no-repeat;
+	height: 800px;
+	margin: 0 auto;
+	text-align: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 p {
 	font-family: Source Sans Pro;
@@ -127,14 +139,11 @@ p {
 	padding:0;
 	top:50px;
 	text-align: center;
-
-
 	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
-
 
 #proj-sec1 {
 	width: 100%;
@@ -158,6 +167,25 @@ p {
 	font-family: Exo;
 	font-size: 13pt;
 	color: #FFF;
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+}
+
+#landing-404 h1 {
+	font-family: Exo;
+	font-size: 18pt;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+}
+
+
+#landing-404 p {
+	font-family: Exo;
+	font-size: 13pt;
+	color: black;
 	text-transform: uppercase;
 	font-weight: 200;
 	text-align: center;
@@ -591,6 +619,27 @@ footer p {
 
 @media only screen and (max-width: 50em) {
 
+#landing-404 {
+	background-image: url(../images/404-changing-slim.jpg);
+	background-position: center; 
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position-y: 80px;
+	height: 800px;
+	margin: 0 auto;
+	text-align: center;
+	text-indent: -25px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#landing-404 .land-logo {
+	margin-left: -25px;
+	margin-top: 12px;
+}
+
 .serviceslist
 {
   columns: 1;
@@ -599,7 +648,7 @@ footer p {
 }
 
 #contact {
-	/*height: 70vh;*/
+	height: inherit;
 }
 
 .s-left {

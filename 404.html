@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gnostyx - 404 - Whoops!</title>
+<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/general.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/projects.css">
+<link href="css/grid.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/navstyles.css">
+<link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/responsive-nav.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+</head>
+
+<body>
+
+<header id="ha-header" class="ha-header">
+<div class="ha-header-perspective">
+<nav id="navmenu">
+<ul id="menu">
+<li><img src="images/logo.svg" class="logo"></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#services">Services</a></li>
+<li><a href="index.html#section4">Products</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="ha-waypoint" data-animate-down="ha-header-show" data-animate-up="ha-header-hide">
+</section>
+
+<section id="landing-404"><div class="background"></div>
+<img src="images/logo-black.svg" class="land-logo">
+<div class="introtype">
+<h1>404 - Whoops!</h1>
+<br/>
+<p>Well this is awkward, eh?</p>
+<br/>
+<p>Let's just go <a href="/">back home</a>...</p>
+</div>
+</section>
+
+<footer>
+<section id="footer-content"></section>
+<section id="contact">
+<div class="contact">
+<p>Get in touch with us!</p>
+<br/>
+<p><a href="https://twitter.com/gnostyx" class="twitter-follow-button" data-show-count="false">Follow @gnostyx</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+<br/>
+<p><a id="imgSendEmail" href="#"><img src="images/email.png" style="height: 20px; width: 117px;border-radius: 3px;"></a></p>
+<br/>
+<p>Gnostyx Research Inc.</p>
+<p>1 Rideau Street</p>
+<p>Suite 700</p>
+<p>Ottawa, Ontario K1N 8S7</p>
+<p>Canada</p>
+<br/>
+<p>+1-613-670-5786</p>
+</div>
+</section>
+<div class="copyright"><p>GNOSTYX RESEARCH INC. 2016 © ALL RIGHTS RESERVED</p></div>
+</footer>
+
+<script src="js/waypoints2.min.js"></script>
+<script type="text/javascript" src="js/jquery.cbpQTRotator.min.js"></script>
+<script>
+var $head = $( '#ha-header' );
+$( '.ha-waypoint' ).each( function(i) {
+var $el = $( this ),
+animClassDown = $el.data( 'animateDown' ),
+animClassUp = $el.data( 'animateUp' );
+
+$el.waypoint( function( direction ) {
+if( direction === 'down' && animClassDown ) {
+$head.attr('class', 'ha-header ' + animClassDown);
+}
+else if( direction === 'up' && animClassUp ){
+$head.attr('class', 'ha-header ' + animClassUp);
+}
+}, { offset: '0%' } );
+} );
+</script>
+
+<script>
+var navigation = responsiveNav("#navmenu", {closeOnNavClick: true, insert: "after"});
+</script>
+
+<script>
+$( function() {
+$( '#cbp-qtrotator' ).cbpQTRotator();
+} );
+</script>
+<script type="text/javascript">
+$('#imgSendEmail').click(function (event) {
+var mailtoLink = 'mailto:' +  'info' + '@' + 'gnostyx' + '.com?subject=Gnostyx Inquiry';
+this.href = mailtoLink;
+});
+</script>
+
+<script type="text/javascript" src="js/retina.min.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+
+</body>
+</html>
